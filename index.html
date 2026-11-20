@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KavachIndia - Digital Arrest & Cyber Fraud Shield</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Emergency Banner -->
+    <div class="emergency-bar">
+        <span>🚨 <strong>EMERGENCY:</strong> Lost money or currently on a threatening video call?</span>
+        <a href="tel:1930" class="call-1930-btn">Call 1930 Immediately</a>
+        <a href="https://cybercrime.gov.in" target="_blank" class="portal-link">Report at cybercrime.gov.in ↗</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">🛡️ Kavach<span>India</span></div>
+        <div class="nav-links">
+            <a href="#panic-checker">Scam Detector</a>
+            <a href="#message-scanner">Message/Link Scanner</a>
+            <a href="#know-your-rights">Legal Facts</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="badge">🇮🇳 Built for Digital India Safety</div>
+        <h1>Stop Fake "Digital Arrests" & Cyber Scams Before You Pay.</h1>
+        <p>Indian Police, CBI, RBI, and Courts <strong>NEVER</strong> arrest citizens over WhatsApp or Skype video calls. Verify suspicious calls, notices, and links in 10 seconds.</p>
+        <div class="hero-buttons">
+            <a href="#panic-checker" class="btn-primary">🚨 Check If You Are Being Scammed</a>
+            <a href="#message-scanner" class="btn-secondary">🔍 Scan Suspicious Message / Notice</a>
+        </div>
+    </header>
+
+    <!-- Tool 1: Interactive Digital Arrest & Scam Checker -->
+    <section id="panic-checker" class="container section-box">
+        <h2>1. Interactive "Am I Being Scammed?" Detector</h2>
+        <p class="subtitle">Select what is happening right now for an instant AI-rule risk assessment:</p>
+
+        <div class="quiz-box" id="quiz-container">
+            <div class="question-card">
+                <label class="checkbox-item">
+                    <input type="checkbox" class="scam-trigger" value="30">
+                    <span>Caller claims to be from <strong>CBI, Police, Customs, RBI, or TRAI</strong>.</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" class="scam-trigger" value="40">
+                    <span>They asked you to join a <strong>WhatsApp / Skype video call</strong> and stay on camera ("Digital Arrest").</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" class="scam-trigger" value="30">
+                    <span>They claim a <strong>parcel with drugs/illegal passports</strong> was found in your name, or your SIM will be blocked.</span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" class="scam-trigger" value="40">
+                    <span>They are demanding money transfer for <strong>"verification," "bail," or "RBI clearance."</strong></span>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" class="scam-trigger" value="25">
+                    <span>They told you <strong>not to tell family members</strong> or hang up the call.</span>
+                </label>
+            </div>
+
+            <button onclick="evaluateScam()" class="btn-primary full-width">Analyze Situation Now</button>
+
+            <!-- Result Box -->
+            <div id="quiz-result" class="result-card hidden"></div>
+        </div>
+    </section>
+
+    <!-- Tool 2: Suspicious SMS / WhatsApp / Notice Text Analyzer -->
+    <section id="message-scanner" class="container section-box">
+        <h2>2. Suspicious Message, Link & Notice Scanner</h2>
+        <p class="subtitle">Paste any threatening SMS, WhatsApp text, court notice text, or website link below:</p>
+
+        <textarea id="scam-text-input" rows="5" placeholder="Example: Dear customer your SBI KYC is suspended today click http://bit.ly or your account will be blocked..."></textarea>
+        <button onclick="scanMessage()" class="btn-primary">🔍 Scan Text & Links for Fraud</button>
+
+        <div id="scanner-result" class="result-card hidden"></div>
+    </section>
+
+    <!-- Section 3: Official Indian Legal Facts -->
+    <section id="know-your-rights" class="container">
+        <h2>3. Golden Rules Against Cyber Fraud in India</h2>
+        <div class="grid-3">
+            <div class="info-card">
+                <h3>🚫 No "Digital Arrest" in Law</h3>
+                <p>Under Indian law, no police agency, CBI, or ED conducts interrogations or arrests via video call. Hang up immediately.</p>
+            </div>
+            <div class="info-card">
+                <h3>⏱️ The Golden Hour (1930)</h3>
+                <p>If money is debited, reporting within 1 hour on <strong>1930</strong> allows I4C to freeze the scammer's bank account before withdrawal.</p>
+            </div>
+            <div class="info-card">
+                <h3>⚠️ Never Install .APK Files</h3>
+                <p>Scammers send fake "RTO Challan" or "Bank KYC" Android apps (.apk) on WhatsApp to read your OTPs remotely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>KavachIndia</strong> — Citizen Cyber Safety Initiative | Built for Hackathon & Public Awareness</p>
+        <p class="disclaimer">Disclaimer: This platform is an educational and early-warning tool. Always report active financial fraud to the official MHA helpline 1930 or cybercrime.gov.in.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
